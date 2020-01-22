@@ -15,7 +15,7 @@ global IsWindowOnDesktopNumberProc := DllCall("GetProcAddress", Ptr, hVirtualDes
 global MoveWindowToDesktopNumberProc := DllCall("GetProcAddress", Ptr, hVirtualDesktopAccessor, AStr, "MoveWindowToDesktopNumber", "Ptr")
 
 ; Main
-SetKeyDelay, 75
+SetKeyDelay, 10
 mapDesktopsFromRegistry()
 OutputDebug, [loading] desktops: %DesktopCount% current: %CurrentDesktop%
 
@@ -122,7 +122,7 @@ _switchDesktopToTarget(targetDesktop)
     }
 
     ; Makes the WinActivate fix less intrusive
-    Sleep, 50
+    Sleep, 10
     focusTheForemostWindow(targetDesktop)
 }
 
