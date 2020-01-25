@@ -27,17 +27,14 @@ F14::switchDesktopToRight()
 ^XButton1::switchDesktopToLeft()
 ^XButton2::switchDesktopToRight()
 
-^!Down::switchDesktopToLeft()
-^!Up::switchDesktopToRight()
-
-^!Right::
+F15::
 sleep, 10
-Send #{Tab}
+Send #d
 sleep, 10
 return
 
-^!Left::
+F16::
 sleep, 10
-Send #d
+Send #{Tab}
 sleep, 10
 return
