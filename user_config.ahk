@@ -21,19 +21,19 @@
 ; === END OF INSTRUCTIONS ===
 ; ===========================
 
-F13::switchDesktopToLeft()
-F14::switchDesktopToRight()
+^F21::switchDesktopToLeft()
+^F22::switchDesktopToRight()
 
 ^XButton1::switchDesktopToLeft()
 ^XButton2::switchDesktopToRight()
 
-F15::
+^F23::
 sleep, 10
 Send #d
 sleep, 10
 return
 
-F16::
+^F24::
 sleep, 10
 Send #{Tab}
 sleep, 10
