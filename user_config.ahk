@@ -21,20 +21,25 @@
 ; === END OF INSTRUCTIONS ===
 ; ===========================
 
-^F21::switchDesktopToLeft()
-^F22::switchDesktopToRight()
+F21::switchDesktopToLeft()
+F22::switchDesktopToRight()
 
 ^XButton1::switchDesktopToLeft()
 ^XButton2::switchDesktopToRight()
 
-^F23::
+F23::
 sleep, 10
 Send #d
 sleep, 10
 return
 
-^F24::
+F24::
 sleep, 10
 Send #{Tab}
 sleep, 10
 return
+
+ScrollLock::Send {Volume_Down}
+Pause::Send {Volume_Up}
+^Space::Send {Media_Play_Pause}
+
